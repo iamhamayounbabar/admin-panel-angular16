@@ -1,0 +1,105 @@
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-11 mx-auto">
+            <div class="row mt-3">
+                <div class="col-3 ">
+                    <div class="rounded-3 bg-secondary text-white p-3">
+                        <div class="icon d-flex gap-3">
+                            <span>
+                                <img src="assets/images/people-white-icon.svg" alt="">
+                            </span>
+                            <h5>Total Users</h5>
+                        </div>
+                        <div class="mt-3">
+                            <h3>256</h3>
+                            <h6 style="font-size: 13px;" class="mt-3">8% increase from Last month</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="rounded-3 bg-gray text-white p-3">
+                        <div class="icon d-flex gap-3">
+                            <span>
+                                <img src="assets/images/note-white-icon.svg" alt="">
+                            </span>
+                            <h5>Total Users</h5>
+                        </div>
+                        <div class="mt-3">
+                            <h3>256</h3>
+                            <h6 style="font-size: 13px;" class="mt-3">8% increase from Last month</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="rounded-3 bg-gold text-dark p-3">
+                        <div class="icon d-flex gap-3">
+                            <span>
+                                <img src="assets/images/people-black-icon.svg" alt="">
+                            </span>
+                            <h5>Total Users</h5>
+                        </div>
+                        <div class="mt-3">
+                            <h3>256</h3>
+                            <h6 style="font-size: 13px;" class="mt-3">8% increase from Last month</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="rounded-3 bg-silver text-dark p-3">
+                        <div class="icon d-flex gap-3">
+                            <span>
+                                <img src="assets/images/people-black-icon.svg" alt="">
+                            </span>
+                            <h5>Total Reports</h5>
+                        </div>
+                        <div class="mt-3">
+                            <h3>256</h3>
+                            <h6 style="font-size: 13px;" class="mt-3">8% increase from Last month</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-11">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <app-user-history-chart></app-user-history-chart>
+                </div>
+                <div class="col-6">
+                    <app-user-history-chart></app-user-history-chart>
+                </div>
+                <div class="col-7 mt-3">
+                    <div class="bg-white  rounded-3 p-3">
+                        <h4>Ads Verification Requests</h4>
+                        <table class="table">
+                            <thead class="border-0">
+                                <tr>
+                                    <th style="font-size: 15px; border: 0;">Ad ID</th>
+                                    <th style="font-size: 15px; border: 0;">User ID</th>
+                                    <th style="font-size: 15px; border: 0;">Date Submited</th>
+                                    <th style="font-size: 15px; border: 0;">Ad Content Preview</th>
+                                    <th style="font-size: 15px; border: 0;">Verification Status</th>
+                                    <th style="font-size: 15px; border: 0;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody *ngFor="let data of table">
+                                <tr>
+                                    <td>{{data.adId}}</td>
+                                    <td>{{data.userId}}</td>
+                                    <td>{{data.dateSubmit}}</td>
+                                    <td>{{data.adContent}}</td>
+                                    <td>{{data.verify}}</td>
+                                    <td>
+                                        <button class="btn btn-warning w-100" style="font-size: 10px;">Verified</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

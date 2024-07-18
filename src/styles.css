@@ -1,0 +1,19 @@
+body{
+    background: #F2F2F2;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.pointer:hover{
+color: rgb(68, 67, 67);
+}
+.btn-dark{
+    background-color: #414141 !important;
+    color: white;
+}
+.btn-dark:hover{
+    background-color: #000000 !important;
+    color: white;
+}

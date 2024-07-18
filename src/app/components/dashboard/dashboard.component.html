@@ -1,0 +1,124 @@
+<div class="container-fluid">
+    <div class="sidebar" [class.collapsed]="isCollapsed">
+        <div class="d-flex justify-content-between align-items-center">
+            <div *ngIf="!isCollapsed">
+                <img src="assets/images/dashboard-logo.svg" alt="">
+            </div>
+            <div *ngIf="isCollapsed" class="mx-auto">
+                <img (click)="toggleSidebar()" class="pointer" src="assets/images/dashboard-mb-logo.svg" alt="">
+            </div>
+            <div class="text-end">
+                <img src="assets/images/menu-icon.svg" class="pointer" *ngIf="!isCollapsed" (click)="toggleSidebar()">
+            </div>
+        </div>
+        <ul class="menu-items">
+            <li>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/explore-icon.svg" alt="">
+                </span>
+                <span class="text">Dashboard</span>
+            </li>
+            <div class="mt-3">
+                <h5>Users</h5>
+            </div>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/users-icon.svg" alt="">
+                </span>
+                <span class="text">All Users</span>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/verify-icon.svg" alt="">
+                </span>
+                <span class="text">Verify Users</span>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/note-icon.svg" alt="">
+                </span>
+                <span class="text">Today registration</span>
+            </li>
+            <hr>
+            <div class="mt-3">
+                <h5>Ads</h5>
+            </div>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/ads-icon.svg" alt="">
+                </span>
+                <span class="text">All Ads</span>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/verify-ads-icon.svg" alt="">
+                </span>
+                <span class="text">Approve or reject</span>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/clock-icon.svg" alt="">
+                </span>
+                <span class="text">Ads history</span>
+            </li>
+            <hr>
+            <div class="mt-3">
+                <h5>Statistics</h5>
+            </div>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/status-up-icon.svg" alt="">
+                </span>
+                <span class="text">Reports</span>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/people-icon.svg" alt="">
+                </span>
+                <span class="text">Team Mng</span>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/banner-icon.svg" alt="">
+                </span>
+                <span class="text">Banners</span>
+            </li>
+            <hr>
+            <div class="mt-3">
+                <h5>Messages</h5>
+            </div>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/messages-icon.svg" alt="">
+                </span>
+                <span class="text">Messages</span>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/arrow-up-icon.svg" alt="">
+                </span>
+                <span class="text">Boost</span>
+            </li>
+            <li>
+                <span class="icon">
+                    <img src="assets/images/money-add-icon.svg" alt="">
+                </span>
+                <span class="text">Payment</span>
+            </li>
+
+            <li>
+                <span class="icon mt-3">
+                    <img src="assets/images/logout-icon.svg" alt="">
+                </span>
+                <span class="text">Logout</span>
+            </li>
+
+        </ul>
+    </div>
+    <div class="main-content">
+        <app-navbar></app-navbar>
+        <app-explore-dashboard></app-explore-dashboard>
+    </div>
+</div>
